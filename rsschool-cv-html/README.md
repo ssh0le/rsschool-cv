@@ -1,1 +1,0 @@
-https://ssh0le.github.io/rsschool-cv/
