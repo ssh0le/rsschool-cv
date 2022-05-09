@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+body {
+    background-color: rgb(234, 241, 239);
+}
+
+.main {
+    height: 1160px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text_area {
+    height: 400px;
+    width: 95%;
+}
+
+.input_area {
+    width: 95%;
+    height: 95%;
+    font-size: 4rem;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border: 1px solid rgb(113, 203, 217);
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 95%;
+    justify-content: space-evenly;
+}
+
+.keyboard_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 1%;
+}
+
+.keyboard_key {
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: rgb(113, 203, 217);
+    color: rgb(255, 255, 255);
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    border: 3px solid rgb(113, 203, 217);
+    cursor: default;
+    user-select: none;
+    letter-spacing: -1px;
+}
+
+.typing_key {
+    position: relative;
+}
+
+.special_key {
+    background-color: rgb(98, 187, 197);
+    border: 3px solid rgb(98, 187, 197);
+}
+
+.key_wide {
+    flex-grow: 1;
+}
+
+.key_spacious {
+    width: 100px;
+}
+
+.key_space {
+    flex-grow: 1;
+}
+
+.key_active {
+    border: 3px solid rgb(167, 59, 220);
+}
+
+.key_disabled {
+    border: 0;
+}
+
+.key_content_main {
+    display: flex;
+}
+
+.key_content_extra {
+    position: absolute;
+    font-size: 2rem;
+    top: 3px;
+    left: 4px;
+}
+
+.tool_bar {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 2rem;
+}
